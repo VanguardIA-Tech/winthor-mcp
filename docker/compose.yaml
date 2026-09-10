@@ -1,0 +1,16 @@
+# Servidor MCP stdio. Use `run`, não `up`:
+#
+#   docker compose -f docker/compose.yaml run --rm winthor-mcp
+#
+# A configuração vem do .env na raiz do repositório (veja .env.example).
+
+services:
+  winthor-mcp:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: winthor-mcp
+    env_file: ../.env
+    stdin_open: true
+    tty: false
+    restart: "no"

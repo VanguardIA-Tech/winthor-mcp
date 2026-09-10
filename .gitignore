@@ -1,0 +1,44 @@
+# Credenciais e configuração local
+.env
+.env.*
+!.env.example
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+
+# uv
+.uv-cache/
+
+# Bytecode e caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ferramentas
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Artefatos de build
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Editores
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
